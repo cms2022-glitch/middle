@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 포트폴리오</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background-image: url('https://github.com/cms2022-glitch/middle/blob/main/%ED%95%98%EC%9A%B8%EC%9D%98%20%EC%9B%80%EC%A7%81%EC%9D%B4%EB%8A%94%20%EC%84%B1_1920x1080%2001.jpg?raw=true');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md shadow-sm transition-all">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <a href="#" class="text-2xl font-bold text-indigo-600 tracking-tighter hover:rotate-6 transition duration-300 transform inline-block">
+                MY PORTFOLIO
+            </a>
+
+            <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                
+                <a href="#home" class="group relative hover:text-indigo-600 transition duration-300">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="#features" class="group relative hover:text-indigo-600 transition duration-300">
+                    Skills
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="about.html" class="group relative hover:text-indigo-600 transition duration-300">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="calculator.html" class="group relative hover:text-indigo-600 transition duration-300">
+                    Calculator
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative w-full h-screen flex items-center justify-center hero-bg">
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <span class="block text-indigo-400 font-semibold tracking-widest uppercase mb-4 animate-pulse">
+                Welcome to my Portfolio
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                안녕하세요,<br>
+                <span class="text-indigo-400">최무성</span>입니다.
+            </h1>
+            <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+                웹 개발과 데이터 분석, 게임 개발에 관심이 많은 학생입니다.<br>
+                Html, Tailwind를 활용하여 웹사이트를 구축해 봤습니다.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="about.html" 
+                   class="px-8 py-4 bg-indigo-600 text-white font-bold rounded-full shadow-lg hover:bg-indigo-700 hover:scale-105 transform transition duration-300">
+                   About Me 보러가기
+                </a>
+                <a href="calculator.html" 
+                   class="px-8 py-4 bg-white text-gray-900 font-bold rounded-full shadow-lg hover:bg-gray-100 hover:scale-105 transform transition duration-300">
+                   🧮 계산기 실행
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">What I Do</h2>
+                <p class="text-gray-500 mt-4">제가 공부하고 있는 분야들을 소개합니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                    <p class="text-gray-500 leading-relaxed">HTML, CSS, JavaScript를 활용하여 반응형 웹사이트를 공부하고 있습니다.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Data Analysis</h3>
+                    <p class="text-gray-500 leading-relaxed">데이터를 분석하고 시각화하여 통계를 만들어내는것을 좋아합니다.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Game Programing</h3>
+                    <p class="text-gray-500 leading-relaxed">게임 개발에 관해서 프로그래밍하면서 게임 개발에 관한 틀을 다지고 있습니다다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p class="text-gray-500">© 2026 My Portfolio. By 20215257 최무성.</p>
+    </footer>
+
+</body>
+</html>
